@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+
+
+<button class="accordion">¿Puedo tener una clase de prueba?</button>
+<div class="panel">
+	
+  <p><br>Podés pasar a conocer el muro y tomar una clase de prueba sin cargo con previa reserva <a href="#contact">por este medio </a>o por <a href="https://api.whatsapp.com/send/?phone=541131713103&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+</div>
+
+<button class="accordion">¿Cómo son las clases introductorias a la escalada?</button>
+<div class="panel">
+  <p><br>Son 8 clases teóricas/prácticas donde se aprenderán los conocimientos básicos de técnica y seguridad para la escalada en roca. Este período viene acompañado de un pase libre para asistir a otras clases de entrenamiento sin costo agregado.<br>Será entregado a su vez el equipo de escalada necesario y un apunte bibliográfico.</p>
+</div>
+
+<button class="accordion">¿Cuánto duran las clases?</button>
+<div class="panel">
+  <p><br>Cada clase dura 90 minutos.</p>
+</div>
+	
+	<button class="accordion">¿Cómo son las clases de entrenamiento?</button>
+<div class="panel">
+  <p><br>Si ya contás con conocimientos básicos de seguridad en escalada podés sumarte a las clases de entrenamiento.<br>En las mismas contás con un compañero/a de cordada o intructor para asegurarte.<br>Te alquilamos el equipo que necesites.</p>
+</div>
+	
+	<button class="accordion">¿Tengo que tener experiencia para ir a las salidas a la roca?</button>
+<div class="panel">
+  <p><br>No es excluyente, pero es necesario que tengas conocimientos de ciertos procedimientos de seguridad que aprenderás en las clases de entrenamiento y talleres de maniobras que dictamos previo a cada salida.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
